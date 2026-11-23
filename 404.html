@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Page not found · Jana, UI/UX Designer</title>
+  <meta name="description" content="This page drifted off the desk. Head back to Jana's portfolio.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f7f1e6">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      var r = document.documentElement, m;
+      r.classList.add("js");
+      try {
+        var d = new Date(), s = JSON.parse(localStorage.getItem("jana.sky.v1") || "null");
+        m = s && s.mode === "manual" && typeof s.minutes === "number" ? s.minutes : d.getHours() * 60 + d.getMinutes();
+      } catch (e) { m = new Date().getHours() * 60; }
+      r.dataset.theme = m < 360 || m >= 1110 ? "dark" : "light";
+    })();
+  </script>
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <style>
+    .lost { min-block-size: 100svh; display: grid; place-items: center; padding: var(--sp-3xl) var(--gutter); }
+    .lost__actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; }
+    .lost__paper {
+      display: grid; gap: var(--sp-s); justify-items: start;
+      max-inline-size: 520px; padding: clamp(28px, 6vw, 56px);
+      border-radius: 4px; background: var(--c-object); color: var(--c-object-ink);
+      box-shadow: var(--sh-3); rotate: -2deg;
+    }
+    .lost__code { font-family: var(--font-mono); font-size: var(--step--1); color: var(--c-ink-2); margin: 0; }
+    .lost h1 { font-size: var(--step-5); line-height: 1; }
+    .lost p { margin: 0; }
+  </style>
+</head>
+<body>
+  <main class="lost" id="main">
+    <div class="lost__paper paper-island" data-theme="light">
+      <p class="lost__code">Error 404 · Page not found</p>
+      <h1>This page <em class="accent">drifted</em> off the desk.</h1>
+      <p>The link may be old, or the page moved. The good stuff is still on the desk.</p>
+      <p class="lost__actions">
+        <a class="btn btn--accent" href="/">Back to the sky <span class="arw" aria-hidden="true">↑</span></a>
+        <a class="btn btn--ghost" href="/projects.html">All projects <span class="arw" aria-hidden="true">→</span></a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>

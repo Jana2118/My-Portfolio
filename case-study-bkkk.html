@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BKKK Casino: Sportsbook &amp; Casino App · Jana, UI/UX Designer</title>
+  <meta name="description" content="Case study: one mobile app for sports betting and casino games, with one account and one balance, and responsible-gambling and compliance states designed in from the start.">
+  <meta name="author" content="Janarthanan V">
+  <meta name="theme-color" content="#f7f1e6">
+  <link rel="canonical" href="https://YOUR-DOMAIN.vercel.app/case-study-bkkk.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Jana · UI/UX Designer">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="BKKK Casino: Sportsbook &amp; Casino App · Case study by Jana">
+  <meta property="og:description" content="Case study: one mobile app for sports betting and casino games, with one account and one balance, and responsible-gambling and compliance states designed in from the start.">
+  <meta property="og:url" content="https://YOUR-DOMAIN.vercel.app/case-study-bkkk.html">
+  <meta property="og:image" content="https://YOUR-DOMAIN.vercel.app/assets/og/og-bkkk.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BKKK Casino: Sportsbook &amp; Casino App: case study card">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BKKK Casino: Sportsbook &amp; Casino App · Case study by Jana">
+  <meta name="twitter:description" content="Case study: one mobile app for sports betting and casino games, with one account and one balance, and responsible-gambling and compliance states designed in from the start.">
+  <meta name="twitter:image" content="https://YOUR-DOMAIN.vercel.app/assets/og/og-bkkk.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/fraunces-roman.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <script>
+    /* Theme before first paint: stored sky time, else the visitor's clock. */
+    (function () {
+      var r = document.documentElement, m;
+      r.classList.add("js");
+      try {
+        var d = new Date(), s = JSON.parse(localStorage.getItem("jana.sky.v1") || "null");
+        m = s && s.mode === "manual" && typeof s.minutes === "number" ? s.minutes : d.getHours() * 60 + d.getMinutes();
+      } catch (e) { m = new Date().getHours() * 60; }
+      r.dataset.theme = m < 360 || m >= 1110 ? "dark" : "light";
+    })();
+  </script>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/sky.css">
+  <link rel="stylesheet" href="css/work.css">
+  <link rel="stylesheet" href="css/case-study.css">
+  <link rel="stylesheet" href="css/motion.css">
+  <script type="module" src="js/main.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "BKKK Casino: Sportsbook &amp; Casino App",
+    "description": "Case study: one mobile app for sports betting and casino games, with one account and one balance, and responsible-gambling and compliance states designed in from the start.",
+    "url": "https://YOUR-DOMAIN.vercel.app/case-study-bkkk.html",
+    "author": { "@type": "Person", "name": "Janarthanan V", "alternateName": "Jana", "jobTitle": "UI/UX Designer" }
+  }
+  </script>
+</head>
+<body class="case-study">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-nav" data-nav>
+    <nav class="site-nav__bar" aria-label="Primary">
+      <a class="site-nav__brand" href="index.html"><span class="emoji" aria-hidden="true" data-brand-icon>☀️</span><span class="site-nav__name">Jana<span class="accent">.</span></span><span class="visually-hidden"> (home)</span></a>
+      <ul class="site-nav__links" role="list">
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="assets/Janarthanan_V_Resume.pdf" target="_blank" rel="noopener" data-resume>Résumé <span class="arw" aria-hidden="true">↗</span><span class="visually-hidden"> (PDF, opens in a new tab)</span></a></li>
+      </ul>
+      <button class="site-nav__theme" type="button" data-theme-toggle aria-pressed="false"><span class="visually-hidden">Night sky</span><span class="emoji" aria-hidden="true" data-theme-icon>🌙</span></button>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- ================= HERO · compact sky ================= -->
+    <section class="sky sky--compact hero" id="top" data-sky aria-labelledby="cs-title">
+      <div class="sky__air" aria-hidden="true">
+        <svg class="sky__stars" data-sky-stars viewBox="0 0 100 62" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+        <div class="sky__clouds"><span class="cloud cloud--1"></span><span class="cloud cloud--2"></span><span class="cloud cloud--3"></span></div>
+        <svg class="sky__birds" viewBox="0 0 90 30" focusable="false"><path d="M2 14 q8 -8 16 0 q8 -8 16 0"/><path d="M50 22 q6 -6 12 0 q6 -6 12 0"/></svg>
+      </div>
+
+      <div class="sky__orbit" data-sky-orbit aria-hidden="true">
+        <svg class="sky__path" focusable="false"><path data-sky-path d=""/></svg>
+        <div class="sky__body sky__body--sun" data-body="sun"><span class="sun__rays"></span></div>
+        <div class="sky__body sky__body--moon" data-body="moon"></div>
+        <p class="sky__hint" data-sky-hint-wrap><span class="emoji">👆</span> <span data-sky-hint>Drag the sun</span></p>
+      </div>
+
+      <div class="sky__ground" aria-hidden="true">
+        <svg viewBox="0 0 1600 200" preserveAspectRatio="xMidYMax slice" focusable="false">
+          <defs>
+            <linearGradient id="beam" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" style="stop-color: var(--c-sun-glow); stop-opacity: 0.9"/>
+              <stop offset="1" style="stop-color: var(--c-sun-glow); stop-opacity: 0"/>
+            </linearGradient>
+            <symbol id="palm" viewBox="0 0 120 200">
+              <path d="M58 200 C 60 150, 66 100, 61 50 L 68 50 C 74 100, 71 150, 70 200 Z"/>
+              <path d="M65 48 C 40 30, 20 34, 2 54 C 24 40, 44 42, 65 52 Z"/>
+              <path d="M65 48 C 90 28, 110 34, 120 56 C 100 42, 84 42, 65 52 Z"/>
+              <path d="M65 46 C 56 20, 40 8, 20 4 C 42 16, 54 28, 63 50 Z"/>
+              <path d="M65 46 C 76 18, 92 8, 112 8 C 92 20, 80 30, 67 50 Z"/>
+              <path d="M65 48 C 50 50, 36 64, 28 86 C 42 66, 54 58, 66 52 Z"/>
+              <path d="M66 48 C 82 52, 94 66, 100 88 C 88 68, 78 58, 64 52 Z"/>
+              <circle cx="61" cy="55" r="4"/><circle cx="69" cy="56" r="4"/>
+            </symbol>
+          </defs>
+          <!-- far coast: city skyline with a gopuram -->
+          <path class="g-coast" d="M-200 0 V-8 H0 V-14 H40 V-22 H70 V-10 H110 V-30 H140 V-18 H170 V-8 H200 V-26 H226 V-36 H240 V-26 H262 V-12 H300 V-20 H330 V-6 H380 V-12 H388 V-22 H396 V-32 H404 V-40 H412 V-48 H416 V-56 H424 V-48 H428 V-40 H436 V-32 H444 V-22 H452 V-12 H460 V-6 H470 V-10 H500 V-18 H540 V-12 H580 V-6 H620 V0 Z"/>
+          <path class="g-coast" d="M1440 0 C 1500 -8, 1560 -12, 1800 -6 V0 Z"/>
+          <rect class="g-sea" x="-200" y="0" width="2000" height="124"/>
+          <path class="g-shine" d="M300 22h40M520 40h70M880 18h50M1040 52h90M1300 30h60M180 64h50M700 78h80M980 92h40"/>
+          <g class="g-fore g-boat"><path d="M796 54 H866 L856 64 H806 Z"/><path d="M830 54 V22 h3 V54 Z"/><path d="M835 26 L835 50 L858 50 Z"/></g>
+          <path class="g-shore" d="M-200 106 C 200 94, 500 120, 800 106 S 1400 94, 1800 110 V200 H-200 Z"/>
+          <!-- lighthouse -->
+          <g class="g-beam"><path d="M1186 -54 L1640 -120 L1640 -4 Z" fill="url(#beam)"/></g>
+          <g class="g-fore">
+            <path d="M1172 156 L1178 -40 H1194 L1200 156 Z"/>
+            <rect x="1168" y="-46" width="36" height="6" rx="1"/>
+            <path d="M1174 -62 L1186 -78 L1198 -62 Z"/>
+            <ellipse cx="1186" cy="156" rx="40" ry="10"/>
+          </g>
+          <rect class="g-lamp" x="1178" y="-62" width="16" height="16" rx="2"/>
+          <!-- palms -->
+          <use class="g-fore" href="#palm" x="1320" y="-44" width="130" height="210"/>
+          <use class="g-fore" href="#palm" x="1452" y="-6" width="96" height="170"/>
+          <use class="g-fore" href="#palm" x="30" y="-20" width="110" height="190"/>
+        </svg>
+      </div>
+
+      <div class="hero__inner container">
+        <div class="hero__copy" data-sky-copy>
+          <a class="cs-crumb" href="index.html#work"><span aria-hidden="true">←</span> All work</a>
+          <p class="cs-strip"><span>Case study 06</span><span aria-hidden="true">·</span><span>Mobile app · real-money gaming</span><span aria-hidden="true">·</span><span>2026</span></p>
+          <h1 class="cs-title" id="cs-title" data-split="load" style="view-transition-name: cs-bkkk">BKKK Casino: sport and casino in <em class="accent">one</em> app</h1>
+          <p class="cs-outcome">One mobile app for sports betting and casino games, with one account and one balance, and responsible-gambling and compliance states designed in from the start.</p>
+          <dl class="cs-meta">
+            <div><dt>Role</dt><dd>UX/UI Executive</dd></div>
+            <div><dt>Timeline</dt><dd>2026</dd></div>
+            <div><dt>Platform</dt><dd>iOS &amp; Android app · operations console</dd></div>
+            <div><dt>Deliverables</dt><dd>App prototype, 145 screens · ops console prototype</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="sky__panel">
+        <p class="sky__readout"><span class="emoji" aria-hidden="true" data-sky-icon>☀️</span><span data-sky-weather>Clear</span><span aria-hidden="true">·</span><time data-sky-time datetime="12:00">12:00</time></p>
+        <button class="sky__now" type="button" data-sky-now aria-label="Now: back to your local time" hidden>↺ Now</button>
+        <label class="sky__label" for="sky-range">Time of day</label>
+        <input class="sky__range" id="sky-range" type="range" min="0" max="1439" step="1" value="720" data-sky-range aria-describedby="sky-help">
+        <div class="sky__ticks" aria-hidden="true"><span>00</span><span>06</span><span>12</span><span>18</span><span>24</span></div>
+        <p class="visually-hidden" id="sky-help">Moves the sun and moon across the sky. Night switches the whole site to the dark theme. Arrow keys move 15 minutes, Page Up and Page Down move an hour.</p>
+      </div>
+    </section>
+
+    <div class="cs-cover container">
+      <div class="shot shot--browser"><div class="mock-browser__bar" aria-hidden="true"><span class="mock-dots"><i></i><i></i><i></i></span><span class="mock-url">bkkk casino · prototype</span></div><picture><source type="image/avif" srcset="assets/case-bkkk/prototype-800.avif 800w, assets/case-bkkk/prototype.avif 1600w" sizes="(min-width: 1024px) 760px, 92vw"><source type="image/webp" srcset="assets/case-bkkk/prototype-800.webp 800w, assets/case-bkkk/prototype.webp 1600w" sizes="(min-width: 1024px) 760px, 92vw"><img src="assets/case-bkkk/prototype-800.jpg" width="800" height="500" alt="The clickable prototype: a screen navigator grouped by flow next to the live app on a phone" loading="lazy" decoding="async"></picture></div>
+      <ul class="cs-glance" role="list" aria-label="At a glance">
+          <li><span class="cs-glance__num">145</span><span class="cs-glance__label">screens in the clickable prototype, in 15 groups</span></li>
+          <li><span class="cs-glance__num">4</span><span class="cs-glance__label">account states, from guest to self-excluded</span></li>
+      </ul>
+    </div>
+
+    <div class="cs-body container">
+      <div class="cs-layout">
+        <nav class="cs-toc" aria-label="On this page">
+          <p class="cs-toc__title">On this page</p>
+          <ol role="list">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#challenge">The challenge</a></li>
+            <li><a href="#research">Who it’s for</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#solution">The solution</a></li>
+            <li><a href="#details">Design details</a></li>
+            <li><a href="#next">Next steps</a></li>
+          </ol>
+        </nav>
+
+        <article class="cs-article">
+          <section class="cs-section" id="overview" aria-labelledby="overview-h">
+            <p class="cs-kicker">01 · Overview</p>
+            <h2 id="overview-h" data-split>Project <em class="accent">overview</em></h2>
+            <h3 class="cs-sub">Introduction</h3>
+            <p>BKKK Casino is a real-money mobile app that puts sports betting and casino games in one place: pre-match and live betting, slots, table games and live dealers, under one account and one balance. Its line on the splash screen says it plainly: <em>Every Game. Every Edge. One App.</em></p>
+            <p>It is built for speed, with fast bet placement, real-time odds, instant deposits and same-day withdrawals, and a home feed that surfaces the sports, leagues and games each person actually plays.</p>
+            <h3 class="cs-sub">My role</h3>
+            <p>As UX/UI Executive, I designed the clickable mobile prototype, working from the product’s screen-by-screen flow documentation and extending it to every state the app can be in: 145 screens across 15 groups. I also designed the operations console the team uses to run the platform.</p>
+          </section>
+          <section class="cs-section" id="challenge" aria-labelledby="challenge-h">
+            <p class="cs-kicker">02 · The challenge</p>
+            <h2 id="challenge-h" data-split>The <em class="accent">challenge</em></h2>
+            <figure class="cs-quote">
+              <blockquote><p>Browse, select and place a bet in under 60 seconds.</p></blockquote>
+              <figcaption>The first user goal in the product’s flow documentation</figcaption>
+            </figure>
+            <p>People who bet on sport and play casino games usually juggle separate apps, logins and wallets. The app had to bring them together and stay fast, while working inside some of the strictest rules any consumer product faces: identity checks, location checks, age limits, spending limits and self-exclusion.</p>
+            <h3 class="cs-sub">What made it hard</h3>
+            <ul class="constraints" role="list">
+              <li class="constraint"><h3>Two products, one app</h3><p>A sportsbook and a casino have different rhythms, yet they had to share one account, one balance and one navigation.</p></li>
+              <li class="constraint"><h3>Speed under pressure</h3><p>Live odds change by the second, and markets can be suspended mid-match; the bet slip has to keep up.</p></li>
+              <li class="constraint"><h3>Regulated at every step</h3><p>Real money only after identity verification, and only where wagering is legal, so location is checked before play.</p></li>
+              <li class="constraint"><h3>Care built in</h3><p>Stake limits, cooling-off and self-exclusion have to be clear and firm, without feeling like punishment.</p></li>
+            </ul>
+          </section>
+          <section class="cs-section" id="research" aria-labelledby="research-h">
+            <p class="cs-kicker">03 · Who it’s for</p>
+            <h2 id="research-h" data-split>Four kinds of <em class="accent">player</em></h2>
+            <p>The flow documentation defines who the app serves and what each person can do at each stage of their account. Designing for all of them at once shaped the home feed, the navigation and every gate in the app.</p>
+            <ul class="constraints" role="list">
+              <li class="constraint"><h3>Weekend bettor</h3><p>The primary user: bets around major sporting events and plays casino games now and then.</p></li>
+              <li class="constraint"><h3>Daily sports bettor</h3><p>Checks odds every day and places many smaller bets across several leagues.</p></li>
+              <li class="constraint"><h3>Casino player</h3><p>Prefers slots and table games, and uses the sportsbook for big events.</p></li>
+              <li class="constraint"><h3>Cross-product power user</h3><p>Plays both heavily and responds to promotions.</p></li>
+            </ul>
+            <h3 class="cs-sub">Four account states</h3>
+            <div class="cs-table-wrap" tabindex="0" role="region" aria-label="What each account state can do, scrolls sideways">
+              <table class="cs-table">
+                <thead><tr><th scope="col">State</th><th scope="col">Can do</th><th scope="col">Can’t do yet</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Guest</th><td>Browse odds, the casino lobby and promotions, read-only</td><td>Bet, deposit, use the wallet or claim offers</td></tr>
+                  <tr><th scope="row">Registered, KYC pending</th><td>Browse, upload identity documents, set responsible-gambling limits</td><td>Deposit, bet or play for real money</td></tr>
+                  <tr><th scope="row">Verified</th><td>Everything: sportsbook, casino, wallet, promotions</td><td>Go past their own limits, or play outside permitted locations</td></tr>
+                  <tr><th scope="row">Self-excluded or suspended</th><td>See account status, contact support, find help</td><td>Any real-money feature, until the exclusion period ends</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="cs-section" id="goals" aria-labelledby="goals-h">
+            <p class="cs-kicker">04 · Goals</p>
+            <h2 id="goals-h" data-split>What it had to <em class="accent">do</em></h2>
+            <div class="goals">
+              <div class="goals__col">
+                <h3 class="cs-sub">For the business</h3>
+                <ul>
+                  <li>One account and one balance across sportsbook and casino</li>
+                  <li>Same-day withdrawals instead of the usual multi-day wait</li>
+                  <li>One rewards ladder spanning sports bets and casino play</li>
+                </ul>
+              </div>
+              <div class="goals__col">
+                <h3 class="cs-sub">For the people using it</h3>
+                <ul>
+                  <li>Place a bet in under 60 seconds</li>
+                  <li>Track live bets on matches in progress</li>
+                  <li>Manage limits and preferences in one place</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="cs-section" id="solution" aria-labelledby="solution-h">
+            <p class="cs-kicker">05 · The solution</p>
+            <h2 id="solution-h" data-split>The <em class="accent">solution</em></h2>
+            <p>A clickable prototype of the whole app. Teams, odds, balances and games in the screens below are sample data.</p>
+            <article class="solution">
+              <h3 class="solution__title"><span class="solution__num">01.</span> Trust before the first bet</h3>
+              <p>From the first launch, the app checks who you are and where you are, and explains why.</p>
+              <div class="gallery">
+                <figure class="gallery__item"><div class="shot shot--phone shot--tight"><picture><source type="image/avif" srcset="assets/case-bkkk/splash.avif 480w" sizes="260px"><source type="image/webp" srcset="assets/case-bkkk/splash.webp 480w" sizes="260px"><img src="assets/case-bkkk/splash.png" width="480" height="1022" alt="BKKK Casino splash screen: every game, every edge, one app" loading="lazy" decoding="async"></picture></div><figcaption>Launch</figcaption></figure>
+                <figure class="gallery__item"><div class="shot shot--phone shot--tight"><picture><source type="image/avif" srcset="assets/case-bkkk/kyc.avif 480w" sizes="260px"><source type="image/webp" srcset="assets/case-bkkk/kyc.webp 480w" sizes="260px"><img src="assets/case-bkkk/kyc.png" width="480" height="1022" alt="Verify your identity: a three-step progress bar and a plain explanation of why it is required" loading="lazy" decoding="async"></picture></div><figcaption>Identity check</figcaption></figure>
+                <figure class="gallery__item"><div class="shot shot--phone shot--tight"><picture><source type="image/avif" srcset="assets/case-bkkk/geo-block.avif 480w" sizes="260px"><source type="image/webp" srcset="assets/case-bkkk/geo-block.webp 480w" sizes="260px"><img src="assets/case-bkkk/geo-block.png" width="480" height="1022" alt="Not available here: betting isn't available in your current location, with a where-can-I-play link" loading="lazy" decoding="async"></picture></div><figcaption>Location check</figcaption></figure>
+              </div>
+              <div class="solution__grid">
+                <div>
+                  <p class="solution__label">What’s in the design</p>
+                  <ul>
+                  <li>A KYC hub with three steps (details, ID upload, verified) and why it’s required, in plain words</li>
+                  <li>Location access requested before play, with the reason shown up front</li>
+                  <li>A clear “not available here” screen that names the detected location and offers where you can play</li>
+                  </ul>
+                </div>
+                <div class="callout callout--why"><p class="callout__label">Why it matters</p><p>Regulation decides when someone can play; the design decides whether they understand why. Explaining each check at the moment it happens turns a blocker into a step people can follow.</p></div>
+              </div>
+            </article>
+            <article class="solution">
+              <h3 class="solution__title"><span class="solution__num">02.</span> One home for sport and casino</h3>
+              <p>A personalised home feed puts live matches, today’s fixtures and boosts first, and the casino is one tab away, on the same balance.</p>
+              <div class="gallery">
+                <figure class="gallery__item"><div class="shot shot--phone shot--tight"><picture><source type="image/avif" srcset="assets/case-bkkk/home.avif 480w" sizes="260px"><source type="image/webp" srcset="assets/case-bkkk/home.webp 480w" sizes="260px"><img src="assets/case-bkkk/home.png" width="480" height="1022" alt="Home feed: sport filters, a profit boost, live matches with odds and featured fixtures" loading="lazy" decoding="async"></picture></div><figcaption>Home feed</figcaption></figure>
+                <figure class="gallery__item"><div class="shot shot--phone shot--tight"><picture><source type="image/avif" srcset="assets/case-bkkk/casino.avif 480w" sizes="260px"><source type="image/webp" srcset="assets/case-bkkk/casino.webp 480w" sizes="260px"><img src="assets/case-bkkk/casino.png" width="480" height="1022" alt="Casino lobby: featured, slots, table and live dealer tabs with game tiles" loading="lazy" decoding="async"></picture></div><figcaption>Casino lobby</figcaption></figure>
+                <figure class="gallery__item"><div class="shot shot--phone shot--tight"><picture><source type="image/avif" srcset="assets/case-bkkk/blackjack.avif 480w" sizes="260px"><source type="image/webp" srcset="assets/case-bkkk/blackjack.webp 480w" sizes="260px"><img src="assets/case-bkkk/blackjack.png" width="480" height="1022" alt="Blackjack table with stand, hit, double and split actions" loading="lazy" decoding="async"></picture></div><figcaption>A table game</figcaption></figure>
+              </div>
+              <div class="solution__grid">
+                <div>
+                  <p class="solution__label">What’s in the design</p>
+                  <ul>
+                  <li>Sport filters, live matches with scores and odds, and featured fixtures on one feed</li>
+                  <li>Casino lobby with featured, slots, table and live-dealer tabs</li>
+                  <li>Table games with large, thumb-friendly actions</li>
+                  </ul>
+                </div>
+                <div class="callout callout--why"><p class="callout__label">Why it matters</p><p>Each kind of player has a main habit, sport or casino, but most dip into the other. A shared balance and one navigation bar let them cross over without a second app, login or wallet.</p></div>
+              </div>
+            </article>
+            <article class="solution">
+              <h3 class="solution__title"><span class="solution__num">03.</span> Betting fast, even live</h3>
+              <p>From a match to a placed bet in a few taps, with live odds and the state of every bet always visible.</p>
+              <div class="gallery">
+                <figure class="gallery__item"><div class="shot shot--phone shot--tight"><picture><source type="image/avif" srcset="assets/case-bkkk/match.avif 480w" sizes="260px"><source type="image/webp" srcset="assets/case-bkkk/match.webp 480w" sizes="260px"><img src="assets/case-bkkk/match.png" width="480" height="1022" alt="Match markets: moneyline, spread and total points, with a build-a-same-game-parlay button" loading="lazy" decoding="async"></picture></div><figcaption>Match markets</figcaption></figure>
+                <figure class="gallery__item"><div class="shot shot--phone shot--tight"><picture><source type="image/avif" srcset="assets/case-bkkk/live.avif 480w" sizes="260px"><source type="image/webp" srcset="assets/case-bkkk/live.webp 480w" sizes="260px"><img src="assets/case-bkkk/live.png" width="480" height="1022" alt="Live match tracker: score, possession and shots, with next goal and match winner markets" loading="lazy" decoding="async"></picture></div><figcaption>Live betting</figcaption></figure>
+                <figure class="gallery__item"><div class="shot shot--phone shot--tight"><picture><source type="image/avif" srcset="assets/case-bkkk/my-bets.avif 480w" sizes="260px"><source type="image/webp" srcset="assets/case-bkkk/my-bets.webp 480w" sizes="260px"><img src="assets/case-bkkk/my-bets.png" width="480" height="1022" alt="My bets: open bets with leg-by-leg status, settled and casino tabs" loading="lazy" decoding="async"></picture></div><figcaption>My bets</figcaption></figure>
+              </div>
+              <div class="solution__grid">
+                <div>
+                  <p class="solution__label">What’s in the design</p>
+                  <ul>
+                  <li>Markets grouped as moneyline, spread and totals, with a guided same-game-parlay builder</li>
+                  <li>A live tracker with score and stats next to the markets</li>
+                  <li>My Bets with leg-by-leg status for every open bet</li>
+                  </ul>
+                </div>
+                <div class="callout callout--why"><p class="callout__label">Why it matters</p><p>Speed is the product’s promise, but a fast bet is only good if people know exactly what they backed. Grouped markets and per-leg status keep both.</p></div>
+              </div>
+            </article>
+            <article class="solution">
+              <h3 class="solution__title"><span class="solution__num">04.</span> Money in, money out</h3>
+              <p>One wallet for both products, with deposits in a couple of taps and withdrawals tracked to the end.</p>
+              <div class="gallery">
+                <figure class="gallery__item"><div class="shot shot--phone shot--tight"><picture><source type="image/avif" srcset="assets/case-bkkk/wallet.avif 480w" sizes="260px"><source type="image/webp" srcset="assets/case-bkkk/wallet.webp 480w" sizes="260px"><img src="assets/case-bkkk/wallet.png" width="480" height="1022" alt="Wallet: total balance split into withdrawable and bonus, with deposit, withdraw and recent activity" loading="lazy" decoding="async"></picture></div><figcaption>Wallet</figcaption></figure>
+                <figure class="gallery__item"><div class="shot shot--phone shot--tight"><picture><source type="image/avif" srcset="assets/case-bkkk/deposit.avif 480w" sizes="260px"><source type="image/webp" srcset="assets/case-bkkk/deposit.webp 480w" sizes="260px"><img src="assets/case-bkkk/deposit.png" width="480" height="1022" alt="Deposit: quick amounts, saved card, add a new card or wallet, or pay with crypto" loading="lazy" decoding="async"></picture></div><figcaption>Deposit</figcaption></figure>
+              </div>
+              <div class="solution__grid">
+                <div>
+                  <p class="solution__label">What’s in the design</p>
+                  <ul>
+                  <li>Balance split into withdrawable and bonus money, so nothing is a surprise at cash-out</li>
+                  <li>Quick deposit amounts, saved cards and alternative methods</li>
+                  <li>Withdrawal progress shown on the wallet itself</li>
+                  </ul>
+                </div>
+                <div class="callout callout--why"><p class="callout__label">Why it matters</p><p>Money is where trust is won or lost. Showing what can be withdrawn, and where a withdrawal is, answers both questions before anyone has to ask.</p></div>
+              </div>
+            </article>
+            <article class="solution">
+              <h3 class="solution__title"><span class="solution__num">05.</span> States that protect</h3>
+              <p>Every edge case has its own screen, including the ones that say no.</p>
+              <div class="gallery">
+                <figure class="gallery__item"><div class="shot shot--phone shot--tight"><picture><source type="image/avif" srcset="assets/case-bkkk/stake-limit.avif 480w" sizes="260px"><source type="image/webp" srcset="assets/case-bkkk/stake-limit.webp 480w" sizes="260px"><img src="assets/case-bkkk/stake-limit.png" width="480" height="1022" alt="Stake limit reached: the maximum stake is 500 dollars, lower your stake to continue" loading="lazy" decoding="async"></picture></div><figcaption>Stake limit</figcaption></figure>
+                <figure class="gallery__item"><div class="shot shot--phone shot--tight"><picture><source type="image/avif" srcset="assets/case-bkkk/suspended.avif 480w" sizes="260px"><source type="image/webp" srcset="assets/case-bkkk/suspended.webp 480w" sizes="260px"><img src="assets/case-bkkk/suspended.png" width="480" height="1022" alt="Some markets are temporarily suspended, with a price update in progress" loading="lazy" decoding="async"></picture></div><figcaption>Suspended market</figcaption></figure>
+              </div>
+              <div class="solution__grid">
+                <div>
+                  <p class="solution__label">What’s in the design</p>
+                  <ul>
+                  <li>A stake-limit sheet that states the limit and offers one clear way forward</li>
+                  <li>Suspended markets marked in place while prices update</li>
+                  <li>Session timeout, maintenance, offline, update-required and account-suspended screens</li>
+                  </ul>
+                </div>
+                <div class="callout callout--why"><p class="callout__label">Why it matters</p><p>In a real-money app, the error states are part of responsible design. A firm, calm “not now” protects the player and the operator better than a vague failure.</p></div>
+              </div>
+            </article>
+            <article class="solution">
+              <h3 class="solution__title"><span class="solution__num">06.</span> The operator’s side: one console</h3>
+              <p>Behind the app, staff run the platform from an operations console: players, KYC, casino and sportsbook trading, live risk and payments, in one secure command centre.</p>
+              <div class="gallery">
+                <figure class="gallery__item"><div class="shot shot--browser"><div class="mock-browser__bar" aria-hidden="true"><span class="mock-dots"><i></i><i></i><i></i></span><span class="mock-url">ops · sign in</span></div><picture><source type="image/avif" srcset="assets/case-bkkk/ops-signin-800.avif 800w, assets/case-bkkk/ops-signin.avif 1600w" sizes="(min-width: 1024px) 760px, 92vw"><source type="image/webp" srcset="assets/case-bkkk/ops-signin-800.webp 800w, assets/case-bkkk/ops-signin.webp 1600w" sizes="(min-width: 1024px) 760px, 92vw"><img src="assets/case-bkkk/ops-signin-800.jpg" width="800" height="500" alt="Operations console sign-in: staff credentials, role-restricted and fully audited" loading="lazy" decoding="async"></picture></div><figcaption>Secure sign-in</figcaption></figure>
+                <figure class="gallery__item"><div class="shot shot--browser"><div class="mock-browser__bar" aria-hidden="true"><span class="mock-dots"><i></i><i></i><i></i></span><span class="mock-url">ops · overview</span></div><picture><source type="image/avif" srcset="assets/case-bkkk/ops-dash-800.avif 800w, assets/case-bkkk/ops-dash.avif 1600w" sizes="(min-width: 1024px) 760px, 92vw"><source type="image/webp" srcset="assets/case-bkkk/ops-dash-800.webp 800w, assets/case-bkkk/ops-dash.webp 1600w" sizes="(min-width: 1024px) 760px, 92vw"><img src="assets/case-bkkk/ops-dash-800.jpg" width="800" height="500" alt="Operations overview: players, active users, revenue, bets, live events, pending withdrawals, risk alerts and support tickets" loading="lazy" decoding="async"></picture></div><figcaption>Operations overview</figcaption></figure>
+                <figure class="gallery__item"><div class="shot shot--browser"><div class="mock-browser__bar" aria-hidden="true"><span class="mock-dots"><i></i><i></i><i></i></span><span class="mock-url">ops · kyc</span></div><picture><source type="image/avif" srcset="assets/case-bkkk/ops-kyc-800.avif 800w, assets/case-bkkk/ops-kyc.avif 1600w" sizes="(min-width: 1024px) 760px, 92vw"><source type="image/webp" srcset="assets/case-bkkk/ops-kyc-800.webp 800w, assets/case-bkkk/ops-kyc.webp 1600w" sizes="(min-width: 1024px) 760px, 92vw"><img src="assets/case-bkkk/ops-kyc-800.jpg" width="800" height="500" alt="KYC review queue with player documents and statuses" loading="lazy" decoding="async"></picture></div><figcaption>KYC queue</figcaption></figure>
+                <figure class="gallery__item"><div class="shot shot--browser"><div class="mock-browser__bar" aria-hidden="true"><span class="mock-dots"><i></i><i></i><i></i></span><span class="mock-url">ops · risk</span></div><picture><source type="image/avif" srcset="assets/case-bkkk/ops-risk-800.avif 800w, assets/case-bkkk/ops-risk.avif 1600w" sizes="(min-width: 1024px) 760px, 92vw"><source type="image/webp" srcset="assets/case-bkkk/ops-risk-800.webp 800w, assets/case-bkkk/ops-risk.webp 1600w" sizes="(min-width: 1024px) 760px, 92vw"><img src="assets/case-bkkk/ops-risk-800.jpg" width="800" height="500" alt="Risk monitor with alerts and exposure" loading="lazy" decoding="async"></picture></div><figcaption>Risk monitor</figcaption></figure>
+              </div>
+              <div class="solution__grid">
+                <div>
+                  <p class="solution__label">What’s in the design</p>
+                  <ul>
+                  <li>Staff sign-in with two-factor codes, then a role and permission check before the console opens</li>
+                  <li>16 modules, from users and KYC to sportsbook, live operations, risk, wallet and finance, promotions, support and reports</li>
+                  <li>An overview where every card opens its module, and critical risk alerts such as sharp betting and suspicious patterns</li>
+                  <li>Queues for KYC reviews and pending withdrawals</li>
+                  </ul>
+                </div>
+                <div class="callout callout--why"><p class="callout__label">Why it matters</p><p>The player’s protections only work if the team can act on them. Putting KYC, risk alerts and withdrawals one click from the overview keeps the operator as careful as the app asks players to be.</p></div>
+              </div>
+            </article>
+          </section>
+          <section class="cs-section" id="details" aria-labelledby="details-h">
+            <p class="cs-kicker">06 · Design details</p>
+            <h2 id="details-h" data-split>Details that <em class="accent">matter</em></h2>
+            <ul class="step-cards step-cards--plain" role="list">
+              <li class="step-card"><h3>Every state, not just the happy path</h3><p>Wrong, expired and too-many-tries codes; loading, empty and error states; and system screens from geo-block to update required.</p></li>
+              <li class="step-card"><h3>A navigator for the whole app</h3><p>The prototype opens with a screen navigator grouped by flow, so anyone reviewing it can jump straight to any of its 145 screens.</p></li>
+              <li class="step-card"><h3>Reasons, not just rules</h3><p>Location, identity and limit screens each say why they exist, in one plain sentence.</p></li>
+            </ul>
+          </section>
+          <section class="cs-section" id="next" aria-labelledby="next-h">
+            <p class="cs-kicker">07 · Next steps</p>
+            <h2 id="next-h" data-split>Where it goes <em class="accent">next</em></h2>
+            <ol class="step-cards" role="list">
+              <li class="step-card"><span class="step-card__num" aria-hidden="true">01</span><h3>Per-market rules</h3><p>Fit verification, self-exclusion and browsing rules to each launch market’s regulations.</p></li>
+              <li class="step-card"><span class="step-card__num" aria-hidden="true">02</span><h3>Time to first bet</h3><p>Test the under-60-seconds goal with real users, from home feed to placed bet.</p></li>
+              <li class="step-card"><span class="step-card__num" aria-hidden="true">03</span><h3>Limits people actually set</h3><p>Watch how players find and use deposit and stake limits, and make them easier to reach.</p></li>
+            </ol>
+          </section>
+        </article>
+      </div>
+    </div>
+
+    <section class="cs-next container" aria-label="Next case study">
+      <a class="next-card" href="case-study-builtglory.html">
+        <span class="next-card__kicker">Next case study</span>
+        <span class="next-card__title" style="view-transition-name: cs-builtglory">BuiltGlory: Verified Real Estate</span>
+        <span class="next-card__arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© 2026 Janarthanan V · Made with <span class="emoji" role="img" aria-label="love">❤️</span> in Chennai</p>
+      <a class="link" href="projects.html">All projects <span class="arw" aria-hidden="true">→</span></a>
+      <a class="link" href="#top">Back to the sky <span class="arw" aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
